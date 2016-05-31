@@ -1,1 +1,6 @@
+#Check out the directory path
+import os
+print os.getcwd()
+
+
 
