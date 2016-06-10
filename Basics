@@ -5,12 +5,13 @@ print os.getcwd()
 ##########################################################
 > str1 = 'hello';  str2 = ','  ; str3 = 'world';  str4 = str1 + str3
 Indexing examples
-str1[1] = "e"  & str1[-1] = "0"
+str1[1] = "e"  also str1[-1] = "0"
 str1 + str2 + str3 = "hello,world"
 str3 * 3 = "worldworldworld"
 "r" in str3 = True
-str3[1:3] = "or"  & str3[:3] = "wor"
-str4[1:9:2] = "elwr"  &  str4[::-1] = "dlrowolleh"
+str3[1:3] = "or"  also str3[:3] = "wor"
+str4[1:9:2] = "elwr"  also  str4[::-1] = "dlrowolleh"  also, str[::2] = "hloold"
+#Here s[start:End:Step]. Step will take alternative for each step. In above example, we remove every 2nd element.
 #####################################################
 
 
