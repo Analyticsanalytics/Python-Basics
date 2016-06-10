@@ -2,5 +2,35 @@
 import os
 print os.getcwd()
 
+##########################################################
+> str1 = 'hello';  str2 = ','  ; str3 = 'world';  str4 = str1 + str3
+Indexing examples
+str1[1] = "e"  & str1[-1] = "0"
+str1 + str2 + str3 = "hello,world"
+str3 * 3 = "worldworldworld"
+"r" in str3 = True
+str3[1:3] = "or"  & str3[:3] = "wor"
+str4[1:9:2] = "elwr"  &  str4[::-1] = "dlrowolleh"
+#####################################################
 
+
+########## Conditional Assignment    ############################
+
+varA = 9, varB = adieu
+Write a piece of Python code that prints out one of the following messages:
+"string involved" if either varA or varB are strings
+"bigger" if varA is larger than varB
+"equal" if varA is equal to varB
+"smaller" if varA is smaller than varB
+ 
+ #SOlution
+if type(varA) == str or type(varB) == str:
+   print"string involved"
+elif varA > varB:
+   print "bigger"
+elif varA == varB:
+   print "equal"
+elif varA < varB:
+   print"smaller"
+############################################################
 
