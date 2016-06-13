@@ -35,3 +35,42 @@ elif varA < varB:
    print"smaller"
 ############################################################
 
+While Loop Examples:
+1. Convert the following into code that uses a while loop.
+print 2
+print 4
+print 6
+print 8
+print 10
+print Goodbye!
+
+Solution:
+num = 2
+while num <= 10:
+     print num
+     num = num + 2
+print "Goodbye!"
+    
+2. Convert the following into code that uses a while loop.
+print Hello!; print 10; print 8; print 6; print 4; print 2
+
+Solution:
+num = 10
+print "Hello!"
+while num >= 2:
+    print num
+    num = num -2
+
+# Here is another way to solve this:
+num = 11
+print "Hello!"
+while num > 1:
+    num -= 1
+    if num %2 == 0:
+        print num    
+    
+
+
+
+
+
