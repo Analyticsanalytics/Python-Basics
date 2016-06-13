@@ -1,7 +1,7 @@
 #Check out the directory path
 import os
 print os.getcwd()
-
+stop an infinite loop using CTRL+C
 ##########################################################
 > str1 = 'hello';  str2 = ','  ; str3 = 'world';  str4 = str1 + str3
 Indexing examples
