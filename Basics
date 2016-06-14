@@ -81,7 +81,7 @@ while num <= end:
 print total
 
 ### Basic if and while loops
-Create a while loop which prints these values in separare rows: 0, 1, 2, 3, 4, 5, Outside of loop, 6
+4. Create a while loop which prints these values in separare rows: 0, 1, 2, 3, 4, 5, Outside of loop, 6
 num = 0
 while num <= 5:
     print num                #1st these numbers will be printed, then the boolean condition will hit false
@@ -89,14 +89,14 @@ while num <= 5:
 print "Outside of loop"    #2nd then this will be printed
 print num                  #3rd this will be printed. Here final number which is 6 will be printed.
 
-Print 9, 8, 7, 6, 5, 4, 3 in separate rows each using loop
+5. Print 9, 8, 7, 6, 5, 4, 3 in separate rows each using loop
 num = 10
 while num > 3:
     num -= 1
     print num 
 
 
-#### Print the solution of this problem?
+6. Print the solution of this problem?
 greeting = 'Hello!'
 count = 0
 for letter in greeting:
@@ -118,7 +118,7 @@ l
 !
 
 
-### What will the solution to this loop
+7. What will the solution to this loop
 count = 0
 for letter in 'Snow!':
     print 'Letter # ' + str(count) + ' is ' + str(letter)
@@ -128,3 +128,22 @@ print count
 
 Solution:     
 Letter # 0 is S, 1
+
+
+8. What will be solution to this problem: 
+for variable in range(20):
+    if variable % 4 == 0:
+        print variable
+    if variable % 16 == 0:
+        print 'Foo!' 
+        
+Solution:
+0 
+Foo!
+4
+8
+12
+16
+Foo!
+
+
