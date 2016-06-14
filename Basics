@@ -118,5 +118,13 @@ l
 !
 
 
+### What will the solution to this loop
+count = 0
+for letter in 'Snow!':
+    print 'Letter # ' + str(count) + ' is ' + str(letter)
+    count += 1
+    break
+print count 
 
-
+Solution:     
+Letter # 0 is S, 1
