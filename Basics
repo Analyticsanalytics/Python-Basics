@@ -146,4 +146,18 @@ Foo!
 16
 Foo!
 
+9.  Convert the following output into code that uses a for loop. print 2
+print 4
+print 6
+print 8
+print 10
+print "Goodbye!"
 
+Solution:
+for i in range(1, 11):
+    if i % 2 == 0:
+        print num
+print "Goodbye!"
+
+
+10.
