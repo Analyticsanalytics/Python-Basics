@@ -204,6 +204,7 @@ for iteration in range(5):
     count += len(phrase)
     print "Iteration " + str(iteration) + "; count is: " + str(count)
 
+###################     FUNCTION         ###################################
 
 12. What will "d('apple', 11.1)" will return as output using the below function
 def d(x, y):
@@ -216,7 +217,6 @@ def d(x, y):
 
 Solution: Since return value is boolean assignment; "Apple" will be converted to 5 and 11.1 will be converted to 4. Even dot will be
 considered here and since 5 > 4, the answer of d('apple', 11.1) would be TRUE.
-
 
 
 13. What would be the solution:
@@ -238,5 +238,19 @@ def foo (x):
 foo(2)
 
 Solution: Will be answered same as 13 question. So the answer would be 5.
+
+15. Write a Python function, clip(lo, x, hi) that returns lo if x is less than lo; hi if x is greater than hi; and x otherwise. 
+    For this problem, you can assume that lo < hi. Don't use any conditional statements for this problem. Instead, use the built in 
+    Python functions min and max.
+SOlution: 
+
+def clip(lo, x, hi):
+   return min(max(x, lo), hi)
+   
+   #or we can use below function
+def clip(lo, x, hi):
+   return max(min(x, hi), lo)
+   
+
 
 
