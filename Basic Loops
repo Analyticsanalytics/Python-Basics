@@ -205,4 +205,38 @@ for iteration in range(5):
     print "Iteration " + str(iteration) + "; count is: " + str(count)
 
 
+12. What will "d('apple', 11.1)" will return as output using the below function
+def d(x, y):
+   '''
+   x: Can be of any type.
+   y: Can be of any type.
+   '''
+   return x > y
+ 
+
+Solution: Since return value is boolean assignment; "Apple" will be converted to 5 and 11.1 will be converted to 4. Even dot will be
+considered here and since 5 > 4, the answer of d('apple', 11.1) would be TRUE.
+
+
+
+13. What would be the solution:
+def foo(x):
+   def bar(x):
+      return x + 1
+   return bar(x * 2)
+foo(3)
+
+Solution: 1st foo(x) & retrun bar (x*2) will be exected which will give 6 (here x=3). then bar(x) & return will be executed which 
+will give 7 as the answer. so the final asnwer is 7.
+
+14. What would be the solution:
+def foo (x):
+   def bar (z):
+      return z + x
+   return bar(3)
+
+foo(2)
+
+Solution: Will be answered same as 13 question. So the answer would be 5.
+
 
