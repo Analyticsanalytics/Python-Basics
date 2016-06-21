@@ -11,6 +11,13 @@ for i in s:
         total += 1
 print 'Number of vowels:', total
 
+Alternative solution:::::
+total = 0
+for c in s:
+    if c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u':
+        total += 1
+print "Number of vowels: " + str(total)
+
 
 2. Write a program that prints the number of times the string 'bob' occurs in s. For example, if s = 'azcbobobegghakl', then your 
 program should print
@@ -22,6 +29,13 @@ for i in range(len(s)):
    if s[i:i+3] == 'bob': 
       cnt += 1 
 print 'Number of times bob occurs is: ' + str(cnt)
+
+ALTERNATE SOLUTION::
+numBobs = 0
+for i in range(1, len(s)-1):
+    if s[i-1:i+2] == 'bob':
+        numBobs += 1
+print 'Number of times bob occurs is:', numBobs
 
 
 
@@ -49,3 +63,28 @@ def item_order(order):
           water += 1
         
      return "salad:" + str(salad) + " hamburger:" + str(hamburger) + " water:" + str(water)
+
+ALTERNATE SOLUTION:::
+
+def item_order(order):
+    salad = 0
+    hamburger = 0
+    water = 0
+    
+    startspace = 0    
+    space = 0
+    while space > -1:
+        space = order.find(' ', startspace)
+        if space == -1:
+            word = order[startspace:]
+        else:
+            word = order[startspace:space]
+        if word == "salad":
+            salad += 1
+        if word == "hamburger":
+            hamburger += 1
+        if word == "water":
+            water += 1
+        startspace = space+1
+    neworder = "salad:"+str(salad)+" hamburger:"+str(hamburger)+" water:"+str(water)
+    return neworder
