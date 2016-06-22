@@ -114,10 +114,10 @@ for i in range(1,13):
       MI = (balance-MMP)*MonthlyInterestRate
       UB = balance - MMP + MI  #MI is monthly interest. UB is unpaid/remaining balance
       print "Month: " + str(i)
-      print "Minimum monthly payment is: " + str("%.2f" % MMP) 
+      print "Minimum monthly payment is: " + str("%.2f" % MMP) #"%.2f" % will give values upto two decimals only
       print "Remaining balance is: " + str("%.2f" % UB)
       balance = balance - MMP + MI
-      sum1 = sum1 + MMP
+      sum1 = sum1 + MMP  #It will give sum of all the MMP
 
 print "Total paid: " + str("%.2f" % sum1) #"%.2f" % makes sure only 2 digits after decimal displayed
 print "Remaining balance: " + str("%.2f" % UB)
@@ -139,6 +139,7 @@ Test Case 1:
 	      Month: 3
 	      Minimum monthly payment: 160.53
 	      Remaining balance: 3916.89
+	      ......etc
 	      
 	      
 2. Now write a program that calculates the minimum fixed monthly payment needed in order pay off a credit card balance within 12
@@ -169,7 +170,7 @@ while True:
     for i in range(1, 13):
         remain = (remain - fixed) * (1 + MonthlyInterestRate)
     if remain > 0:
-        fixed += 10
+        fixed += 10 #If remain > 0, then increase remain by 10
     else:
         break
     
@@ -208,7 +209,7 @@ Monthly payment upper bound = (Balance x (1 + Monthly interest rate)12) / 12.0
 Solution: 
 MIR = (annualInterestRate)/12.0
 lower = balance/12.0
-upper = (balance*(1 + MIR)**12)/12.0
+upper = (balance*(1 + MIR)**12)/12.0 #In case he pays all the amount in the end of 12th monht. Interest rate would be accrued too.
 fixed = (upper+lower)/2.0
 
 while True:
