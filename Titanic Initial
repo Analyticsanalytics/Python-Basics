@@ -44,6 +44,8 @@ MissAge = df[df['Age'].isnull()][['Sex', 'Pclass', 'Age']] #Subset with NA value
 for i in range(1,4):
     print i, len(df[ (df['Sex'] == 'male') & (df['Pclass'] == i) ])
 
+#Frequency of each type of label in Pclass variable
+df["Pclass"].value_counts()
 
 #Creating histogram of Age
 import pylab as P
@@ -99,4 +101,6 @@ An alternate command is to drop any rows which still have missing values but it 
  #Assign to a new variable, train_data:
 train_data = df.values
 train_data
+
+
 
