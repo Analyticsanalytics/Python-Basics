@@ -20,6 +20,8 @@ type(df)    #CHecking the type of dataframe. It's pandas dataframe
 df.info()  #Same as str in R. Object type variable in python means string
 df.describe()  #Same as summary in R. It doesnt consider NA values in considering central tendency
 
+df.apply(lambda x: sum(x.isnull()), axis=0) #Checking the missing values. axis=0 means apply function on each column
+
 df['Age'][0:10]   # Acquiring the first 10 rows of the Age column
 
 df.Age[0:10]     #Alternative method. Acquiring the first 10 rows of the Age column
