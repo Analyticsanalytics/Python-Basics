@@ -1,3 +1,6 @@
+                  
+                  QUESTION FROM THE BOOK: INTRO TO COMPUTATION USING PYTHON BY JOHN V GUTTANG
+
 1) Write a program that examines three variables— x , y , and z — and prints the largest odd number among them. If none of them
    are odd, it should print a message to that effect.
 Solution: 
@@ -18,3 +21,8 @@ else:
               print "None of them are odd"
 For e.g x,y,z = 9,15,11 would produce 15.
 
+2) Write a program that asks the user to input 10 integers, and then prints the largest odd number that was entered. If no odd
+   number was entered, it should print a message to that effect.
+ Solution:
+integ = raw_input("Enter 10 numbers:")
+print max(integ)
