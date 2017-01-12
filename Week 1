@@ -1,0 +1,8 @@
+name = "Sohail"
+>>> name[:]  #It will create a copy of the name variable and give output as "Sohail"
+"Sohail"
+
+>>>len(name)
+6
+
+
