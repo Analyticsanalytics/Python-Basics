@@ -103,5 +103,9 @@ function
 13.  str2.replace('one', 'seven')
     "Number seven - the larch"
 
-
+#####################################################################################################################################
+Comma(,) in print function will produce a space between the object
+>>> x = 5
+>>> print("my fav num is", x)
+my fav num is 5
 
