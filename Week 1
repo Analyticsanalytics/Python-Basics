@@ -1,8 +1,55 @@
-name = "Sohail"
->>> name[:]  #It will create a copy of the name variable and give output as "Sohail"
-"Sohail"
 
->>>len(name)
-6
+
+str1 = 'hello'
+str2 = ','
+str3 = 'world'
+str4 = str1 + str3
+
+1) str1[0]
+"h"
+
+2) str1[1]
+"e"
+
+3) str1[-1]
+"o"
+
+4) len(str1)
+5
+
+6) str1 + str2 + str3
+"hello,world"
+
+7)str1 + str2 + "" + str3
+"hello, world"
+
+8)str3*3
+"worldworldworld"
+
+9) "a" in str3
+False
+
+
+10)'low' in str4
+True
+
+11) str3[1:3]
+"or"
+12) str3[:-1]
+"worl"
+
+13) str1[1:]
+"ello"
+
+14) str4[1:9]
+"elloworl"
+
+15) str4[1:9:2]
+"elwr"
+
+16) str4[::-1]
+"dlrowolleh"
+
+
 
 
