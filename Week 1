@@ -106,6 +106,12 @@ function
 #####################################################################################################################################
 Comma(,) in print function will produce a space between the object
 >>> x = 5
->>> print("my fav num is", x)
+>>> print("my fav num is", x)  #If we use comma, it gives as space in output and we dont need to change x to str
+my fav num is 5
+
+>>> print("my fav num is" + str(x)) #If we use + sign, we need to change x to str to print. There is space in output cuz no space in input
+my fav num is5
+
+>>> print("my fav num is " + str(x))
 my fav num is 5
 
