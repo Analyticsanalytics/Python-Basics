@@ -29,6 +29,22 @@ def func1(s):
     """
     print(s + " has " + str(len(s)) + " characters")
 
+8) In Python we can also create unnamed functions, using the lambda keyword. Here f1(2) & f2(2) both will give 4
+f1 = lambda x: x**2
+# is equivalent to 
+def f2(x):
+    return x**2
+
+9) The __init__ function is called a constructor, or initializer, and is automatically called when you create a new instance
+    of a class. Within that function, the newly created object is assigned to the parameter self.
+class Point:
+    def __init__(self, x, y):
+        self._x = x
+        self._y = y
+
+
+
+
 
 
 
